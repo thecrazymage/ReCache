@@ -1,0 +1,9 @@
+diffusion_wrapper:
+  wrapper_class: "HunyuanWrapper"
+  parameters:
+    nfe: 50
+    fps: 15
+    width: 640
+    height: 480
+    num_frames: 65
+    guidance_scale: 6.0

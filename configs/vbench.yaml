@@ -1,0 +1,33 @@
+name: vbench
+channels:
+  - nvidia/label/cuda-11.8.0
+  - conda-forge
+dependencies:
+  - python=3.11.15
+  - pip
+  - cuda-toolkit=11.8.0
+  - pip:
+    - "--extra-index-url=https://download.pytorch.org/whl/cu118"
+    - torch==2.7.1+cu118
+    - torchvision==0.22.1+cu118
+    - "nvidia-cuda-nvrtc-cu11 @ https://download.pytorch.org/whl/cu118/nvidia_cuda_nvrtc_cu11-11.8.89-py3-none-manylinux1_x86_64.whl#sha256=1f27d67b0f72902e9065ae568b4f6268dfe49ba3ed269c9a3da99bb86d1d2008"
+    - "nvidia-cusolver-cu11 @ https://download.pytorch.org/whl/cu118/nvidia_cusolver_cu11-11.4.1.48-py3-none-manylinux1_x86_64.whl#sha256=ca538f545645b7e6629140786d3127fe067b3d5a085bd794cde5bfe877c8926f"
+    - setuptools==84.0.0
+    - wheel==0.48.0
+    - ninja==1.13.0
+    - tensorboard==2.15.2
+    - protobuf==3.20.3
+    - lpips==0.1.4
+    - hpsv2==1.1.2
+    - numpy==1.26.4
+    - pillow==12.3.0
+    - opencv-python==4.11.0.86
+    - decord==0.6.0
+    - timm==1.0.12
+    - pyiqa==0.1.10
+    - scipy==1.17.1
+    - scikit-image==0.26.0
+    - regex==2026.7.19
+    - munch==4.0.0
+variables:
+  PYTHONNOUSERSITE: "1"

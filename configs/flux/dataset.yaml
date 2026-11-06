@@ -1,0 +1,16 @@
+prompts_path: "data/coco.txt"
+db_prompts_path: "data/drawbench.txt"
+
+save_path: "data/datasets/flux"
+
+diffusion_wrapper:
+  wrapper_class: "FluxWrapper"
+
+  parameters:
+    nfe: 50
+
+batch_size: 1
+
+train_size: 64
+val_size: 64
+test_size: 1000

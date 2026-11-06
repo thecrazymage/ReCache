@@ -1,0 +1,29 @@
+# Recursive ignores
+__pycache__/
+wandb/
+.neptune/
+.cometml-runs
+draft/
+pretrained/
+checkpoints/
+.DS_Store
+envs/
+vscode/
+.vscode/
+images/
+VBench/
+
+# Ignore model weights and pickle files
+*.pt
+*.pkl
+*.log
+
+# Ignore all files in data
+data/*
+!data/*.txt
+
+# Ignore all notebooks
+*.ipynb
+
+src_image/
+src_video/

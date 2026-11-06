@@ -1,0 +1,20 @@
+prompts_path: "data/vbench_sampled.txt"
+save_path: "data/datasets/wan"
+
+diffusion_wrapper:
+  wrapper_class: "WanWrapper"
+
+  parameters:
+    nfe: 25
+    flow_shift: 3.0
+    fps: 16
+    width: 832
+    height: 480
+    num_frames: 81
+    guidance_scale: 5.0
+
+batch_size: 1
+
+train_size: 64
+val_size: 64
+test_size: 128

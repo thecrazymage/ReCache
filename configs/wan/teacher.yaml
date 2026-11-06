@@ -1,0 +1,10 @@
+diffusion_wrapper:
+  wrapper_class: "WanWrapper"
+  parameters:
+    nfe: 25
+    flow_shift: 3.0
+    fps: 16
+    width: 832
+    height: 480
+    num_frames: 81
+    guidance_scale: 5.0

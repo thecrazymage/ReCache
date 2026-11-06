@@ -1,0 +1,24 @@
+diffusion_wrapper:
+  wrapper_class: "FluxWrapper"
+  parameters:
+    nfe: 50
+
+caching_helper:
+  cacher_class: "LeMiCaHelper"
+
+dataset:
+  path: "data/datasets/flux"
+  test_size: 1000
+  drawbench_size: 200
+  batch_size: 1
+
+logging:
+  logger_class: "BaselinesLogger"
+  parameters:
+    project_name: "flux-multistep"
+    uniform_path: "data/uniform_timesteps.txt"
+    budgets: [7, 8, 9, 13]
+    quality_metrics: ['AQ', 'IQ', 'HPS', 'CLIP', 'IR']
+    fidelity_metrics: ['LPIPS', 'PLPIPS', 'L1', 'PLPIPS_7HPS', 'SSIM' , 'PSNR']
+    batch_size: 1
+    log_size: 4

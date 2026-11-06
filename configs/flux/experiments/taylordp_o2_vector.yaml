@@ -1,0 +1,72 @@
+diffusion_wrapper:
+  wrapper_class: "FluxWrapper"
+
+  parameters:
+    nfe: 50
+
+caching_helper:
+  cacher_class: "TaylorDPHelper"
+  parameters:
+    order: 2
+
+logit_predictor:
+  predictor_variant: "LogitsVector"
+  parameters: null
+
+training:
+  seed: null
+  epochs: 50
+
+  dataset:
+    path: "data/datasets/flux"
+    train_size: 64
+    val_size: 64
+    test_size: 1000
+    drawbench_size: 200
+
+  global_batch_size: 8
+  micro_batch_size: 1
+  
+  budget_scheduler:
+    min_val: 2
+    max_val: 24
+    weight: 0.5
+
+    min_emp_val: 6
+    max_emp_val: 15
+    emp_weight: 1.0
+
+  reinforce:
+    num_samples: 6
+
+  metric:
+    metric_name: "PLPIPS_HPS" 
+    parameters:
+      alpha_plpips: 1.0
+      alpha_hps: 7.0
+
+  entropy_alpha: 0.005
+  optimizer_lr: 0.03
+
+logging:
+  logger_class: "CometLogger"
+
+  parameters:
+    project_name: "flux-training"
+
+    val_frequency: 10
+    test_frequency: 25
+
+    test_metrics: ['LPIPS', 'PLPIPS', 'L1', 'AQ', 'IQ', 'HPS', 'CLIP', 'IR', 'PLPIPS_7HPS', 'PSNR', 'SSIM']
+
+    eval_budget: 9
+    batch_size: 1
+    log_size: 4
+
+    grad_mean_num_iters: 8
+
+    checkpoint_path: 'checkpoints'
+
+    log_multistep:
+      project_name: "flux-multistep"
+      budgets: [7, 8, 9, 13]

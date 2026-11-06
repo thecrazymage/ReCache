@@ -1,0 +1,19 @@
+prompts_path: "data/vbench_sampled.txt"
+save_path: "data/datasets/hunyuan"
+
+diffusion_wrapper:
+  wrapper_class: "HunyuanWrapper"
+
+  parameters:
+    nfe: 50
+    fps: 15
+    width: 640
+    height: 480
+    num_frames: 65
+    guidance_scale: 6.0
+
+batch_size: 1
+
+train_size: 64
+val_size: 64
+test_size: 128

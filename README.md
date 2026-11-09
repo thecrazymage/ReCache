@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/thecrazymage">Mishan&nbsp;Aliev</a><sup>∗,1</sup>, <a href="https://github.com/thecrazymage/ReCache">Eva&nbsp;Neudachina</a><sup>∗,1</sup>, <a href="https://github.com/thecrazymage/ReCache">Ilya&nbsp;Bykov</a><sup>∗,1</sup>, <a href="https://github.com/thecrazymage/ReCache">Aleksandr&nbsp;Oganov</a><sup>1</sup>,<br>
+<a href="https://github.com/thecrazymage">Mishan&nbsp;Aliev</a><sup>∗,1</sup>, <a href="https://github.com/cocosinca">Eva&nbsp;Neudachina</a><sup>∗,1</sup>, <a href="https://github.com/thecrazymage/ReCache">Ilya&nbsp;Bykov</a><sup>∗,1</sup>, <a href="https://github.com/thecrazymage/ReCache">Aleksandr&nbsp;Oganov</a><sup>1</sup>,<br>
 <a href="https://github.com/thecrazymage/ReCache">Kirill&nbsp;Struminsky</a><sup>2,1</sup>, <a href="https://github.com/thecrazymage/ReCache">Aibek&nbsp;Alanov</a><sup>1</sup>, <a href="https://github.com/thecrazymage/ReCache">Denis&nbsp;Rakitin</a><sup>1</sup>
 </p>
 
